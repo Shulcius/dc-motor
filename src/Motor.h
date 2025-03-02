@@ -9,7 +9,8 @@ public:
     Motor(int positive_pin, int negative_pin, int rotation_pin);
 
     void forward(bool state, int turn_speed);
-    void turn_move(bool rotation);
+    void turn_move(int speed);
+    void soft_stop();
     void stop();
 
 private:
